@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+:root {
+    --primary-color: #786fa6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* HOME */
+
+body {
+    background-image: url('https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.initial-box {
+    position: absolute;
+    margin: 160px auto;
+    left: 0;
+    right: 0;
+    
+
+    background: none;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    animation: appear 2000ms ease-in-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: matrix3d(1);
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* CARD 01 */
+
+.initial-box h1.initial, p.initial, button.initial {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.initial-box h1 {
+    font-size: 36px;
+    align-self: center;
+
+    margin-bottom: 35px;
+
+    font-style: italic;
+}
+
+.initial-box p {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.initial-box button {
+    width: 80px;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 47%;
+    background-color: var(--primary-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.initial-box button:hover {
+    transform: scale(1.01);
+}
+
+.logo-title {
+    position: absolute;
+    margin: 70px auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 380px;
+    padding: 24px;
+    border-radius: 8px;
+    opacity: 0.8;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 800ms ease-in-out;
+}
+
+.form .logo-title h1, p, button {
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.logo-title h1 {
+    margin-bottom: 20px;
+}
+
+.logo-title input {
+    width: 90%;
+    margin: 0px auto;
+    height: 30px;
+    border-bottom: 1px solid var(--primary-color);
+    outline: var(--primary-color);
+    padding: 3px 8px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.logo-title p {
+    font-size: bold;
+    font-size: 18px;
+}
+
+.logo-title button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    margin-bottom: 0;
+    display: block;
+    align-self: flex-end;
+    outline: none;
+}
+
+/* CARD 01 */
+
+.images-gif {
+    position: absolute;
+
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+
+    width: 400px;
+    min-height: 250px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 8px;
+    opacity: 0.8;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 800ms ease-in-out;
+}
+
+.images-gif h1 {
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.images-gif p {
+    font-size: 17px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.images-gif input {
+    width: 90%;
+    margin-bottom: 10px;
+    height: 30px;
+    border-bottom: 1px solid var(--primary-color);
+    outline: var(--primary-color);
+    padding: 3px 8px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.images-gif p#add-image {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.images-gif button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    margin-top: 25px;
+    outline: none;
+}
+
+/* CARD 03 */
+
+.about {
+    position: absolute;
+
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+
+    width: 400px;
+    min-height: 250px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 8px;
+    opacity: 0.8;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 800ms ease-in-out;
+}
+
+.about h1 {
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about textarea {
+    background-color: white;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+}
+
+/* CARD 04 */
+
+.last-informations {
+    position: absolute;
+
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+
+    width: 400px;
+    min-height: 250px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 8px;
+    opacity: 0.8;
+
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 800ms ease-in-out;
+}
+
+.last-informations h1 {
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.last-informations p {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.last-informations p#add-tec {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.last-informations input[type="text"] {
+    width: 30%;
+    height: 30px;
+    border-bottom: 1px solid var(--primary-color);
+    outline: var(--primary-color);
+    padding: 1px 4px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.last-informations .contribution p {
+    margin-bottom: 15px;
+}
+
+.last-informations .contribution label {
+    margin-left: 5px;
+}
+
+.last-informations input[type="radio"] {
+    margin-bottom: 15px;
+}
+
+.last-informations .license p {
+    margin-bottom: 10px;
+}
+
+.last-informations select {
+    background-color: white;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.last-informations button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}

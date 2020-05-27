@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>ReadMe Maker</title>
+</head>
+<body>
+    <main>
+        <div class="initial-box">
+            <h1 class="initial">Bem vindo ao ReadMe Maker!</h1>
+            <p class="initial">Estamos ansiosos para saber sobre seu projeto</p>
+            <p class="initial">Vamos Iniciar?</p>
+            <button class="initial" id="button-start">OK!</button>
+        </div>
+        <form class="form" action="" method="get">
+
+            {# CARD 01 #}
+        
+            <div class="logo-title">
+                <h1>Primeiras Informações</h1>
+                <p>Qual o título do seu projeto?</p>
+                <input 
+                    type="text" 
+                    name="title"
+                    placeholder="Título do Projeto"
+                >
+                <p>Seu projeto possui uma logomarca?</p>
+                <input 
+                    type="url" 
+                    name="logo"
+                    placeholder="https://"
+                >
+                <button id="button-next">Próximo</button>
+            </div>
+
+            {# CARD 02 #}
+
+            <div class="images-gif">
+                <h1>Mostra o seu projeto pra gente!</h1>
+                <p>Inclua gifs e/ou imagens do seu projeto funcionando para o seu readme ficar bem visual!</p>
+                <div id="url-img">
+                    <div class="input-url">
+                        <input
+                            type="url"
+                            name="images[]"
+                            placeholder="Gifs ou imagens"
+                        >
+                    </div>
+                </div>
+                    <p id="add-image">Adicionar Arquivo</p>
+                <button id="button-next2">Próximo</button>
+            </div>
+
+            {# CARD 03 #}
+        
+            <div class="about">
+                <h1>Agora a gente quer saber...</h1>
+                <p>Do que se trata o seu projeto?</p>
+                <textarea name="about" cols="30" rows="6"></textarea>
+                <p>Qual o motivo de realizá-lo?</p>
+                <textarea name="reason" cols="30" rows="6"></textarea>
+                <button id="button-next3">Próximo</button>
+            </div>
+            
+            {# CARD 04 #}
+
+            <div class="last-informations">
+                <h1>Para finalizar</h1>
+                <p>Quais tecnologias foram utilizadas?</p>
+                <div id="features">
+                    <div class="features-input">
+                        <input
+                            type="text"
+                            name="features[]"
+                        >
+                    </div>
+                </div>
+                <p id="add-tec">Adicionar Tecnologia</p>
+                <div class="contribution">
+                    <p>Adicionar detalhes de como contribuir com o projeto?</p>
+                    <input type="radio" name="contribution" checked><label for="contribution">Sim</label>
+                    <input type="radio" name="contribution"><label for="contribution">Não</label>
+                </div>
+                <div class="license">
+                    <p>Licença</p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="mit">MIT</option>
+                        <option value="apache">Apache</option>
+                        <option value="glp">GLP</option>
+                    </select>
+                </div>
+
+                <button id="button-finish" type="submit">Finalizar</button>
+            </div>
+        </form>
+    </main>
+
+<script src="/scripts.js"></script>
+</body>
+</html>
