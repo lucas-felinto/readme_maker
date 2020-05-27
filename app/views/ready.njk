@@ -1,0 +1,66 @@
+{% extends "template.njk" %}
+
+    {% block content %}
+
+    <div class="readme-out">
+        <div>
+            <h1>Aqui está seu ReadMe!</h1>
+            <p>Você pode redimensionar o tamanho das suas imagens nas propriedades width e heigth</p>
+            <p>Adicione instruções específicas sobre seu projeto</p>
+            <textarea name="" id="" cols="30" rows="40">
+<h2 align="center">
+{{data.title}}
+</h2>
+ 
+<p align="center"> 
+<img src="{{data.logo}}" width="300" heigth="300">
+</p>   
+
+<p align="center">
+  <a href="LICENSE" >
+      {% if data.license == "mit" %}
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
+      {% endif %}
+  </a>
+</p>
+
+<h3 align="center">  
+  <a href="#information_source-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#interrobang-motivo">Motivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{% if data.contribution == "sim" %}
+  <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{% endif %}
+  <a href="#licença">Licença</a> 
+</h3>
+
+## :information_source: Sobre
+
+{{data.about}}
+
+## :interrobang: Motivo
+
+{{data.reason}}
+
+## :rocket: Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias
+{% for tecnology in data.features %}
+- {{tecnology}}{% endfor %}
+{% if data.contribution == "sim" %}
+## :link: Como contribuir
+
+- Faça um Fork do repositório,
+- Faça um clone do respositório
+- Crie uma branch com a sua feature
+- Faça um commit com suas mudanças
+- Push a sua branch
+- Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
+{% endif %}
+
+## Licença
+{% if data.license == "mit" %}
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+{% endif %}</textarea>
+        </div>
+    </div>
+
+    {% endblock %} 

@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <title>ReadMe Maker</title>
-</head>
-<body>
+{% extends "template.njk" %}
+
+    {% block content %}
+    
     <main>
         <div class="initial-box">
             <h1 class="initial">Bem vindo ao ReadMe Maker!</h1>
@@ -14,7 +9,7 @@
             <p class="initial">Vamos Iniciar?</p>
             <button class="initial" id="button-start">OK!</button>
         </div>
-        <form class="form" action="" method="get">
+        <form class="form" action="/maker" method="post">
 
             {# CARD 01 #}
         
@@ -80,12 +75,12 @@
                 <p id="add-tec">Adicionar Tecnologia</p>
                 <div class="contribution">
                     <p>Adicionar detalhes de como contribuir com o projeto?</p>
-                    <input type="radio" name="contribution" checked><label for="contribution">Sim</label>
-                    <input type="radio" name="contribution"><label for="contribution">Não</label>
+                    <input type="radio" name="contribution" value="sim" checked><label for="contribution">Sim</label>
+                    <input type="radio" name="contribution" value="nao"><label for="contribution">Não</label>
                 </div>
                 <div class="license">
                     <p>Licença</p>
-                    <select name="" id="">
+                    <select name="license" id="">
                         <option value=""></option>
                         <option value="mit">MIT</option>
                         <option value="apache">Apache</option>
@@ -98,6 +93,4 @@
         </form>
     </main>
 
-<script src="/scripts.js"></script>
-</body>
-</html>
+    {% endblock %}  

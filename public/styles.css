@@ -20,7 +20,7 @@
 body {
     background-image: url('https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
 
@@ -392,4 +392,53 @@ body {
 .show {
     visibility: visible;
     opacity: 1;
+}
+
+/* README OUT */
+
+.readme-out {
+    position: absolute;
+
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+
+    width: 800px;
+    min-height: 250px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: 8px;
+    opacity: 0.8;
+
+    text-align: center;
+}
+
+.readme-out h1 {
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.readme-out p {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.readme-out textarea {
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: white;
+    width: 95%;
+    font-family: 'SFMono-Regular','Consolas','Liberation Mono','Menlo','Courier',monospace;
+    font-size: 12px;
+    background: #fff;
+    line-height: 1.5;
 }
