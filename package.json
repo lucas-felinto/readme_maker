@@ -4,8 +4,7 @@
   "description": "A nodeJS plataform developed to help your project's readme github",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all -p nodemon browsersync",
-    "nodemon": "nodemon app/server.js"
+    "start": "node app/server.js"
   },
   "nodemonConfig": {
     "ignore": [
