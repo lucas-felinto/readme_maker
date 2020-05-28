@@ -16,6 +16,24 @@
         "JavaScript"
       ],
       "contribution": "sim"
+    },
+    {
+      "title": "Título do Projeto",
+      "logo": "https://logomarca.com",
+      "images": [
+        "https://umaimagem.com",
+        "https://umaimagem.com",
+        "https://umaimagem.com"
+      ],
+      "about": "O projeto se trata de um...",
+      "reason": "O motivo para realizar foi...",
+      "features": [
+        "React",
+        "JavaScript",
+        "NodeJS"
+      ],
+      "contribution": "sim",
+      "license": "MIT"
     }
   ]
 }

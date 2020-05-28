@@ -8,10 +8,11 @@ module.exports = {
         fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
             if (err) return res.send("error")
 
-            return res.redirect("/")
+            return res.redirect("/ready")
         })
     },
     ready (req, res) {
-        return res.render("ready", {data: data.readme[0]})
+        let lastElement = data.pop()
+        return res.render("ready", {data: lastElement})
     }
 }

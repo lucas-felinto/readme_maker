@@ -414,7 +414,6 @@ body {
     background-color: white;
 
     border-radius: 8px;
-    opacity: 0.8;
 
     text-align: center;
 }
@@ -425,16 +424,15 @@ body {
     margin-bottom: 20px;
 }
 
-.readme-out p {
-    color: var(--primary-color);
-    margin-bottom: 15px;
+.readme-out h3 {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .readme-out textarea {
-    border: 1px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     padding: 12px;
     border-radius: 5px;
-    opacity: 1;
     background-color: white;
     width: 95%;
     font-family: 'SFMono-Regular','Consolas','Liberation Mono','Menlo','Courier',monospace;
