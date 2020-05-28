@@ -17,10 +17,11 @@
 
 /* HOME */
 
+html {
+    background: url('https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg') no-repeat center center fixed; 
+}
+
 body {
-    background-image: url('https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 
