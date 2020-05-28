@@ -34,6 +34,24 @@
       ],
       "contribution": "sim",
       "license": "MIT"
+    },
+    {
+      "title": "Título do Projeto 2",
+      "logo": "https://logomarca.com",
+      "images": [
+        "https://umaimagem.com",
+        "https://umaimagem.com"
+      ],
+      "about": "O projeto se trata...",
+      "reason": "O motivo foi...",
+      "features": [
+        "React",
+        "CSS",
+        "nodeJS",
+        "MongoDB"
+      ],
+      "contribution": "sim",
+      "license": "MIT"
     }
   ]
 }

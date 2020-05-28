@@ -12,7 +12,7 @@ module.exports = {
         })
     },
     ready (req, res) {
-        let lastElement = data.pop()
+        let lastElement = data.readme.pop()
         return res.render("ready", {data: lastElement})
     }
 }

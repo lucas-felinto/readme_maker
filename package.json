@@ -8,6 +8,11 @@
     "nodemon": "nodemon app/server.js",
     "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, app/views'"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "data.json"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucas-felinto/readme_maker.git"
