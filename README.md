@@ -55,7 +55,7 @@ O projeto é aberto para contribuições, todos são bem vindos para colaborar!
 <b>Download das dependências:</b>
 <p>Direcione-se para a raíz do projeto</p>
 
-- ```npm instal```
+- ```npm install```
 
 <b>Executando:</b>
 - `npm start`
