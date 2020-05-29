@@ -1,6 +1,9 @@
 const { app, BrowserWindow } = require('electron')
 const config = require('./config')
 
+let statusIcon = require('status-icon')();
+statusIcon.set('icon.png');
+
 
 function createWindow () {
   // Create windows.
