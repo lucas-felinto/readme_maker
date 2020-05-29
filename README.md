@@ -38,24 +38,19 @@
   <a href="#licença">Licença</a>
 </h4>
 
----
-
 ## :information_source: Sobre
 
 O ReadME Maker é uma aplicação feita para auxiliar desenvolvedores a construirem o README.md dos seus projetos. Com o intuito de facilitar a criação do texto, são feitas algumas perguntas sobre o projeto, apresentando ao final da aplicação todo o markdown pronto para ser implementado no GitHub.
-
----
 
 ## :rocket: Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- NodeJS
-- JavaScript
-- HTML
-- CSS
-
----
+- [Node.js](https://nodejs.org/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [JavaScript](https://www.javascript.com/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
 
 ## :link: Como contribuir
 
@@ -67,8 +62,6 @@ O projeto é aberto para contribuições, todos são bem vindos para colaborar!
 - Faça um commit
 - Faça um push
 - Crie a PR
-
----
 
 ## :beginner: Iniciando 
 
@@ -82,8 +75,6 @@ O projeto é aberto para contribuições, todos são bem vindos para colaborar!
 
 <b>Executando:</b>
 - `npm start`
-
----
 
 ## Licença
 
