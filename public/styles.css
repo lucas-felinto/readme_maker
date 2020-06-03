@@ -7,6 +7,8 @@
 
 :root {
     --primary-color: #786fa6;
+    --secondary-color: #444444;
+    --shadow: 0px 2px 4px 2px rgba(0,0,0,.5);
 }
 
 * {
@@ -24,9 +26,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-
     position: relative;
-
     min-height: fit-content;
 }
 
@@ -36,7 +36,6 @@ body {
     left: 0;
     right: 0;
     
-
     background: none;
     border: none;
 
@@ -89,10 +88,11 @@ body {
     background-color: var(--primary-color);
     outline: none;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .initial-box button:hover {
-    transform: scale(1.01);
+    filter: brightness(90%);
 }
 
 .logo-title {
@@ -116,10 +116,11 @@ body {
     opacity: 0;
 
     transition: 800ms ease-in-out;
+    box-shadow: var(--shadow);
 }
 
 .form .logo-title h1, p, button {
-    color: black;
+    color: var(--secondary-color);
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -142,7 +143,6 @@ body {
 }
 
 .logo-title p {
-    font-size: bold;
     font-size: 18px;
 }
 
@@ -157,6 +157,12 @@ body {
     display: block;
     align-self: flex-end;
     outline: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.logo-title button:hover {
+    filter: brightness(90%);
 }
 
 /* CARD 01 */
@@ -186,9 +192,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 800ms ease-in-out;
+    box-shadow: var(--shadow);
 }
 
 .images-gif h1 {
+    color: var(--secondary-color);
     font-style: italic;
     margin-bottom: 25px;
 }
@@ -229,6 +237,12 @@ body {
     height: 40px;
     margin-top: 25px;
     outline: none;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.images-gif button:hover {
+    filter: brightness(90%);
 }
 
 /* CARD 03 */
@@ -258,9 +272,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 800ms ease-in-out;
+    box-shadow: var(--shadow);
 }
 
 .about h1 {
+    color: var(--secondary-color);
     font-style: italic;
     margin-bottom: 25px;
 }
@@ -292,6 +308,12 @@ body {
     padding: 10px;
     height: 40px;
     outline: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.about button:hover {
+    filter: brightness(90%);
 }
 
 /* CARD 04 */
@@ -321,9 +343,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 800ms ease-in-out;
+    box-shadow: var(--shadow);
 }
 
 .last-informations h1 {
+    color: var(--secondary-color);
     font-style: italic;
     margin-bottom: 25px;
 }
@@ -358,6 +382,8 @@ body {
 
 .last-informations .contribution label {
     margin-left: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .last-informations input[type="radio"] {
@@ -385,6 +411,12 @@ body {
     padding: 10px;
     height: 40px;
     outline: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.last-informations button:hover {
+    filter: brightness(90%);
 }
 
 .hidden {
@@ -422,12 +454,14 @@ body {
 }
 
 .readme-out h1 {
+    color: var(--secondary-color);
     font-style: italic;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .readme-out h3 {
+    color: var(--secondary-color);
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
 }
