@@ -13,7 +13,7 @@ server.set("view engine", "njk")
 nunjucks.configure("app/views", {
     express: server,
     noCache: true,
-    autoescape: false
+    autoescape: true
 })
 
 server.listen(process.env.PORT || 5000)
