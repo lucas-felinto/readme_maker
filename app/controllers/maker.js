@@ -1,18 +1,23 @@
-const fs = require('fs')
-const data = require('../../data.json')
+const createReadme = require('../utils/createReadme')
+let readme = null
 
 module.exports = {
     post (req, res) {
-        data.readme.push(req.body)
+        let features = req.body.features
+        let images = req.body.images
 
-        fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
-            if (err) return res.send("error")
+        features = features.filter(feature => feature)
+        images = images.filter(image => image)
 
-            return res.redirect("/ready")
+        readme = createReadme.init({
+            ...req.body,
+            features,
+            images
         })
+        
+        return res.redirect("/ready")
     },
     ready (req, res) {
-        let lastElement = data.readme.pop()
-        return res.render("ready", {data: lastElement})
+        return res.render("ready", {data: readme})
     }
 }
