@@ -3,6 +3,7 @@ const logoTitle = document.querySelector('.logo-title')
 const imagesGif = document.querySelector('.images-gif')
 const about = document.querySelector('.about')
 const lastInformations = document.querySelector('.last-informations')
+const backButtons = document.querySelectorAll(".label > img")
 
 function removeField(event) {
     const divUrl = event.target.parentNode
@@ -99,5 +100,22 @@ if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
         setTimeout(() => {
             lastInformations.classList.add('show')
         }, 200)
+    })
+}
+
+// backward button
+if(backButtons) {
+    backButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const isBeingShowed = button
+            .parentElement
+            .parentElement            
+            
+            isBeingShowed.classList.remove("show")
+
+            setTimeout(() => {
+                isBeingShowed.previousElementSibling.classList.add("show")
+            }, 200)
+        })
     })
 }
