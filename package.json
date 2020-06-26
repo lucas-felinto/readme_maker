@@ -4,7 +4,8 @@
   "description": "A nodeJS plataform developed to help your project's readme github",
   "main": "server.js",
   "scripts": {
-    "start": "node app/server.js"
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js"
   },
   "nodemonConfig": {
     "ignore": [
@@ -24,7 +25,9 @@
   "homepage": "https://github.com/lucas-felinto/readme_maker#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.4",
     "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
