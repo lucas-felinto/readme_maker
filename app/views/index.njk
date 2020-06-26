@@ -1,7 +1,7 @@
 {% extends "template.njk" %}
 
-    {% block content %}
-    
+{% block content %}
+
     <main>
         <div class="initial-box">
             <h1 class="initial">Bem vindo ao ReadMe Maker!</h1>
@@ -12,7 +12,7 @@
         <form class="form" action="/maker" method="post">
 
             {# CARD 01 #}
-        
+
             <div class="logo-title">
                 <h1>Primeiras Informações</h1>
                 <p>Qual o título do seu projeto?</p>
@@ -33,7 +33,10 @@
             {# CARD 02 #}
 
             <div class="images-gif">
-                <h1>Mostra o seu projeto pra gente!</h1>
+                <div class="label">
+                    <img src="/arrow_back-24px.svg" alt="Backward">
+                    <h1>Mostra o seu projeto pra gente!</h1>
+                </div>
                 <p>Inclua gifs e/ou imagens do seu projeto funcionando para o seu readme ficar bem visual!</p>
                 <div id="url-img">
                     <div class="input-url">
@@ -49,20 +52,26 @@
             </div>
 
             {# CARD 03 #}
-        
+
             <div class="about">
-                <h1>Agora a gente quer saber...</h1>
+                <div class="label">
+                    <img src="/arrow_back-24px.svg" alt="Backward">
+                    <h1>Agora a gente quer saber...</h1>
+                </div>
                 <p>Do que se trata o seu projeto?</p>
                 <textarea name="about" cols="30" rows="6"></textarea>
                 <p>Qual o motivo de realizá-lo?</p>
                 <textarea name="reason" cols="30" rows="6"></textarea>
                 <button id="button-next3">Próximo</button>
             </div>
-            
+
             {# CARD 04 #}
 
             <div class="last-informations">
-                <h1>Para finalizar</h1>
+                <div class="label">
+                    <img src="/arrow_back-24px.svg" alt="Backward">
+                    <h1>Para finalizar</h1>
+                </div>
                 <p>Quais tecnologias foram utilizadas?</p>
                 <div id="features">
                     <div class="features-input">
@@ -77,7 +86,7 @@
                     <p>Adicionar detalhes de como contribuir com o projeto?</p>
 
                     <label for="contribution-yes">Sim
-                        <input type="radio" name="contribution" value="sim" checked id="contribution-yes">
+                        <input type="radio" name="contribution" value="sim" checked="checked" id="contribution-yes">
                     </label>
                     
                     <label for="contribution-no"> Não
@@ -99,4 +108,4 @@
         </form>
     </main>
 
-    {% endblock %}  
+{% endblock %}
