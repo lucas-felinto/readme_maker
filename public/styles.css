@@ -166,6 +166,13 @@ body {
 
 /* CARD 01 */
 
+.label img {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    cursor: pointer;
+}
+
 .images-gif {
     position: absolute;
 
