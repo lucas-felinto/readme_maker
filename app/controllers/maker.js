@@ -13,14 +13,23 @@ module.exports = {
         let features = req.body.features
         let images = req.body.images
 
-        features = features.filter(feature => feature)
-        images = images.filter(image => image)
-
-        readme = createReadme.init({
+        readme = {
             ...req.body,
-            features,
-            images
-        })
+            filesImages
+        }
+
+        if(features && images) {
+            features = features.filter(feature => feature)
+            images = images.filter(image => image)
+            readme = {
+                ...req.body,
+                filesImages,
+                features,
+                images
+            }
+        }
+
+        readme = createReadme.init(readme)
         
         return res.redirect("/ready")
     },
