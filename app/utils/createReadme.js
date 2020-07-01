@@ -1,3 +1,5 @@
+const { url }= require("../config/website")
+
 const Readme = {
     init(data) {
         this.data = data
@@ -8,6 +10,7 @@ const Readme = {
         this.getLogo()
         this.getLicense()
         this.getLinks()
+        this.getImagesUrl()
         this.getImages()
         this.getTecnologies()
         this.getContribution()
@@ -52,11 +55,24 @@ const Readme = {
         const headerLinks = `<h3 align="center">\n  ${links}\n</h3>`
         this.headerLinks = headerLinks
     },
-    getImages() {
+    getImagesUrl() {
         this.images = ''
         if(this.data.images && this.data.images.length > 0) {
             for (const image of this.data.images) {
                 this.images += `<img src="${image}" width="1200">\n`
+            }
+        }
+    },
+    getImages() {
+        if(this.data.filesImages && this.data.filesImages.length > 0) {
+            for (const image of this.data.filesImages) {
+                if(image.fieldname === 'logo_file') {
+                    this.logo += `\n<p align="center">\n  <img src="${url}/uploads/${image.filename}" width="300" heigth="300">\n</p>`
+                }
+
+                if(image.fieldname === 'images_file') {
+                    this.images += `<img src="${url}/uploads/${image.filename}" width="1200">\n`
+                }
             }
         }
     },

@@ -9,7 +9,7 @@
             <p class="initial">Vamos Iniciar?</p>
             <button class="initial" id="button-start">OK!</button>
         </div>
-        <form class="form" action="/maker" method="post">
+        <form class="form" action="/maker" method="post" enctype="multipart/form-data">
 
             {# CARD 01 #}
 
@@ -27,6 +27,26 @@
                     name="logo"
                     placeholder="https://"
                 >
+                <p class="file">Envie seu Arquivo se preferir 
+                    <span class="tooltip">
+                        <img src="/info-24px.svg" alt="Info">
+                        <span class="tooltip-box">Dê preferência inserir links ao invés de arquivos, 
+                            sua imagem pode não estar disponível o tempo todo.<br/>
+                            Você pode hospedar seus arquivos online e disponibilizar um link para nós.
+                            <br/> <strong style="color: #b3a9e8;">Aceitamos o máximo de 1MB por arquivo.</strong>
+                        </span>
+                    </span>
+                </p>
+                <div class="input-file" style="display: flex; justify-content: center;">
+                    <input 
+                        type="file" 
+                        name="logo_file" 
+                        accept=".png, .jpg, .jpeg, .svg, .gif" 
+                        hidden="hidden" 
+                        onchange="PhotosUpload.apply('handleFileInputLogo', event)"
+                    >
+                    <button type="button" style="padding: 8px;">Enviar arquivo</button>
+                </div>
                 <button id="button-next">Próximo</button>
             </div>
 
@@ -48,6 +68,27 @@
                     </div>
                 </div>
                 <p id="add-image">+ Adicionar Arquivo</p>
+                <p class="file">Envie seu Arquivo se preferir 
+                    <span class="tooltip">
+                        <img src="/info-24px.svg" alt="Info">
+                        <span class="tooltip-box">Dê preferência inserir links ao invés de arquivos, 
+                            sua imagem pode não estar disponível o tempo todo.<br/>
+                            Você pode hospedar seus arquivos online e disponibilizar um link para nós.
+                            <br/> <strong style="color: #b3a9e8;">Aceitamos o máximo de 1MB por arquivo.</strong>
+                        </span>
+                    </span>
+                </p>
+                <div class="input-file" style="display: flex; justify-content: center;">
+                    <input 
+                        type="file" 
+                        name="images_file" 
+                        accept=".png, .jpg, .jpeg, .svg, .gif" 
+                        multiple
+                        hidden="hidden" 
+                        onchange="PhotosUpload.apply('handleFileInputProject', event)"
+                    >
+                    <button type="button" style="padding: 8px;">Enviar arquivo</button>
+                </div>
                 <button id="button-next2">Próximo</button>
             </div>
 
