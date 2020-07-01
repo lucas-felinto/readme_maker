@@ -94,6 +94,64 @@ body {
     filter: brightness(90%);
 }
 
+.input-file {
+    display: flex; 
+    justify-content: center;
+}
+
+.input-file > button {
+    padding: 8px;
+}
+
+p.file {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p.file span.tooltip {
+    position: relative;
+}
+
+p.file span.tooltip:hover span.tooltip-box {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s .2s;
+}
+
+p.file span.tooltip-box {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 300px;
+    line-height: 1.4rem;
+    background: #555;
+    color: #f5f5f5;
+    bottom: 100%;
+    transform: translateX(5%);
+    transition: .3s;
+}
+
+p.file span.tooltip-box::after {
+    content: "";
+    left: -18px;
+    bottom: -6px;
+    position: absolute;
+    border-top: 8px solid transparent;
+    transform: rotate(-28deg);
+    border-bottom: 8px solid transparent;
+    border-right: 24px solid #555;
+}
+
+p.file span.tooltip-box strong {
+    color: #b3a9e8;
+}
+
 .logo-title {
     position: absolute;
     margin: 70px auto;
