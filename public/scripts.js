@@ -91,6 +91,7 @@ if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
         imagesGif.classList.remove('show')
         setTimeout(() => {
             about.classList.add('show')
+            about.querySelectorAll("textarea").forEach(textarea => textarea.style.display = "initial")
         }, 200)
     })
 

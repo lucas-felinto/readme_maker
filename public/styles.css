@@ -359,6 +359,7 @@ p.file span.tooltip-box strong {
 }
 
 .about textarea {
+    display: none;
     background-color: white;
     outline: none;
     resize: vertical;
