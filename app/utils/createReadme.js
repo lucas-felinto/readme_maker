@@ -50,7 +50,9 @@ const Readme = {
             links += `\n  <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;|&nbsp;`
         }
 
-        links += `\n  <a href="#licença">Licença</a>`
+        if(this.data.license) {
+            links += `\n  <a href="#licença">Licença</a>`
+        }
         
         const headerLinks = `<h3 align="center">\n  ${links}\n</h3>`
         this.headerLinks = headerLinks
@@ -69,7 +71,7 @@ const Readme = {
                 if(image.fieldname === 'logo_file') {
                     this.logo += `\n<p align="center">\n  <img src="${url}/uploads/${image.filename}" width="300" heigth="300">\n</p>`
                 }
-
+                
                 if(image.fieldname === 'images_file') {
                     this.images += `<img src="${url}/uploads/${image.filename}" width="1200">\n`
                 }
