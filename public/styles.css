@@ -1,556 +1,578 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 
 :root {
-    --primary-color: #786fa6;
-    --secondary-color: #444444;
-    --shadow: 0px 2px 4px 2px rgba(0,0,0,.5);
+  --primary-color: #786fa6;
+  --secondary-color: #444444;
+  --shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* HOME */
 
 html {
-    background: url('https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg') no-repeat center center fixed; 
+  background: url("https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg")
+    no-repeat center center fixed;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: fit-content;
 }
 
 .initial-box {
-    position: absolute;
-    margin: 160px auto;
-    left: 0;
-    right: 0;
-    
-    background: none;
-    border: none;
+  position: absolute;
+  margin: 160px auto;
+  left: 0;
+  right: 0;
 
-    display: flex;
-    flex-direction: column;
+  background: none;
+  border: none;
 
-    text-align: center;
+  display: flex;
+  flex-direction: column;
 
-    animation: appear 2000ms ease-in-out;
+  text-align: center;
+
+  animation: appear 2000ms ease-in-out;
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-        transform: matrix3d(1);
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+    transform: matrix3d(1);
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* CARD 01 */
 
-.initial-box h1.initial, p.initial, button.initial {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+.initial-box h1.initial,
+p.initial,
+button.initial {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .initial-box h1 {
-    font-size: 36px;
-    align-self: center;
+  font-size: 36px;
+  align-self: center;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 
-    font-style: italic;
+  font-style: italic;
 }
 
 .initial-box p {
-    font-size: 24px;
-    margin-bottom: 24px;
+  font-size: 24px;
+  margin-bottom: 24px;
 }
 
 .initial-box button {
-    width: 80px;
-    font-weight: bolder;
-    font-size: 17px;
-    padding: 10px;
-    border-radius: 8px;
-    margin-left: 47%;
-    background-color: var(--primary-color);
-    outline: none;
-    cursor: pointer;
-    transition: all 0.2s;
+  width: 80px;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 47%;
+  background-color: var(--primary-color);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .initial-box button:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 .input-file {
-    display: flex; 
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .input-file > button {
-    padding: 8px;
+  padding: 8px;
 }
 
 p.file {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 p.file span.tooltip {
-    position: relative;
+  position: relative;
 }
 
 p.file span.tooltip:hover span.tooltip-box {
-    opacity: 1;
-    visibility: visible;
-    transition: .3s .2s;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s 0.2s;
 }
 
 p.file span.tooltip-box {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 
-    text-align: left;
-    font-size: 14px;
-    padding: 8px;
-    border-radius: 8px;
-    width: 300px;
-    line-height: 1.4rem;
-    background: #555;
-    color: #f5f5f5;
-    bottom: 100%;
-    transform: translateX(5%);
-    transition: .3s;
+  text-align: left;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 8px;
+  width: 300px;
+  line-height: 1.4rem;
+  background: #555;
+  color: #f5f5f5;
+  bottom: 100%;
+  transform: translateX(5%);
+  transition: 0.3s;
 }
 
 p.file span.tooltip-box::after {
-    content: "";
-    left: -18px;
-    bottom: -6px;
-    position: absolute;
-    border-top: 8px solid transparent;
-    transform: rotate(-28deg);
-    border-bottom: 8px solid transparent;
-    border-right: 24px solid #555;
+  content: "";
+  left: -18px;
+  bottom: -6px;
+  position: absolute;
+  border-top: 8px solid transparent;
+  transform: rotate(-28deg);
+  border-bottom: 8px solid transparent;
+  border-right: 24px solid #555;
 }
 
 p.file span.tooltip-box strong {
-    color: #b3a9e8;
+  color: #b3a9e8;
+}
+
+#file-button {
+  margin-bottom: 20px;
+  width: 50%;
+  height: 30px;
+}
+
+#file-button2 {
+  margin-top: 0;
+  width: 50%;
+  height: 35px;
 }
 
 .logo-title {
-    position: absolute;
-    margin: 70px auto;
-    left: 0;
-    right: 0;
-    width: 300px;
-    height: 380px;
-    padding: 24px;
-    border-radius: 8px;
-    opacity: 0.8;
+  position: absolute;
+  margin: 70px auto;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 380px;
+  padding: 24px;
+  border-radius: 8px;
+  opacity: 0.8;
 
-    text-align: center;
+  text-align: center;
 
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 
-    background-color: white;
-    visibility: hidden;
-    opacity: 0;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
 
-    transition: 800ms ease-in-out;
-    box-shadow: var(--shadow);
+  transition: 800ms ease-in-out;
+  box-shadow: var(--shadow);
 }
 
-.form .logo-title h1, p, button {
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+.form .logo-title h1,
+p,
+button {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.form .logo-title p.file {
+  font-size: 16px;
 }
 
 .logo-title h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .logo-title input {
-    width: 90%;
-    margin: 0px auto;
-    height: 30px;
-    border-bottom: 1px solid var(--primary-color);
-    outline: var(--primary-color);
-    padding: 3px 8px;
+  width: 90%;
+  margin: 0px auto;
+  height: 30px;
+  border-bottom: 1px solid var(--primary-color);
+  outline: var(--primary-color);
+  padding: 3px 8px;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 .logo-title p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .logo-title button {
-    background-color: var(--primary-color);
-    border-radius: 7px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    height: 40px;
-    margin-bottom: 0;
-    display: block;
-    align-self: flex-end;
-    outline: none;
-    transition: all 0.2s;
-    text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  margin-bottom: 0;
+  display: block;
+  align-self: flex-end;
+  outline: none;
+  transition: all 0.2s;
+  text-transform: uppercase;
 }
 
 .logo-title button:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 /* CARD 01 */
 
 .label img {
-    position: absolute;
-    left: 16px;
-    top: 16px;
-    cursor: pointer;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  cursor: pointer;
 }
 
 .images-gif {
-    position: absolute;
+  position: absolute;
 
-    margin: 100px auto;
-    left: 0;
-    right: 0;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
 
-    width: 400px;
-    min-height: 250px;
+  width: 400px;
+  min-height: 250px;
 
-    padding: 24px;
+  padding: 24px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background-color: white;
+  background-color: white;
 
-    border-radius: 8px;
-    opacity: 0.8;
+  border-radius: 8px;
+  opacity: 0.8;
 
-    text-align: center;
+  text-align: center;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: 800ms ease-in-out;
-    box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: 800ms ease-in-out;
+  box-shadow: var(--shadow);
 }
 
 .images-gif h1 {
-    color: var(--secondary-color);
-    font-style: italic;
-    margin-bottom: 25px;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .images-gif p {
-    font-size: 17px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+  font-size: 17px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
 }
 
 .images-gif input {
-    width: 90%;
-    margin-bottom: 10px;
-    height: 30px;
-    border-bottom: 1px solid var(--primary-color);
-    outline: var(--primary-color);
-    padding: 3px 8px;
+  width: 90%;
+  margin-bottom: 10px;
+  height: 30px;
+  border-bottom: 1px solid var(--primary-color);
+  outline: var(--primary-color);
+  padding: 3px 8px;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 .images-gif p#add-image,
 .images-gif p.remove-image {
-    width: fit-content;
-    padding: 8px 16px 8px 0;
-    font-size: 12px;
-    text-align: left;
-    margin-left: 16px;
-    margin-top: 0;
-    cursor: pointer;
+  width: fit-content;
+  padding: 8px 16px 8px 0;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 16px;
+  margin-top: 0;
+  cursor: pointer;
 }
 
 .images-gif p.remove-image {
-    text-align: right;
+  text-align: right;
 }
 
 .images-gif button {
-    background-color: var(--primary-color);
-    border-radius: 7px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    height: 40px;
-    margin-top: 25px;
-    outline: none;
-    transition: 0.2s;
-    text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+  margin-top: 25px;
+  outline: none;
+  transition: 0.2s;
+  text-transform: uppercase;
 }
 
 .images-gif button:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 /* CARD 03 */
 
 .about {
-    position: absolute;
+  position: absolute;
 
-    margin: 5% auto;
-    left: 0;
-    right: 0;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
 
-    width: 400px;
-    min-height: 250px;
+  width: 400px;
+  min-height: 250px;
 
-    padding: 24px;
+  padding: 24px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background-color: white;
+  background-color: white;
 
-    border-radius: 8px;
-    opacity: 0.8;
+  border-radius: 8px;
+  opacity: 0.8;
 
-    text-align: center;
+  text-align: center;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: 800ms ease-in-out;
-    box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: 800ms ease-in-out;
+  box-shadow: var(--shadow);
 }
 
 .about h1 {
-    color: var(--secondary-color);
-    font-style: italic;
-    margin-bottom: 25px;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .about p {
-    font-size: 20px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
 }
 
 .about textarea {
-    display: none;
-    background-color: white;
-    outline: none;
-    resize: vertical;
-    border: 1px solid var(--primary-color);
-    padding: 8px;
-    border-radius: 2px;
-    font-size: 16px;
-    color: black;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
+  display: none;
+  background-color: white;
+  outline: none;
+  resize: vertical;
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .about button {
-    background-color: var(--primary-color);
-    border-radius: 7px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    height: 40px;
-    outline: none;
-    transition: all 0.2s;
-    text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+  outline: none;
+  transition: all 0.2s;
+  text-transform: uppercase;
 }
 
 .about button:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 /* CARD 04 */
 
 .last-informations {
-    position: absolute;
+  position: absolute;
 
-    margin: 100px auto;
-    left: 0;
-    right: 0;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
 
-    width: 400px;
-    min-height: 250px;
+  width: 400px;
+  min-height: 250px;
 
-    padding: 24px;
+  padding: 24px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background-color: white;
+  background-color: white;
 
-    border-radius: 8px;
-    opacity: 0.8;
+  border-radius: 8px;
+  opacity: 0.8;
 
-    text-align: center;
+  text-align: center;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: 800ms ease-in-out;
-    box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: 800ms ease-in-out;
+  box-shadow: var(--shadow);
 }
 
 .last-informations h1 {
-    color: var(--secondary-color);
-    font-style: italic;
-    margin-bottom: 25px;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .last-informations p {
-    font-size: 20px;
-    color: var(--primary-color);
+  font-size: 20px;
+  color: var(--primary-color);
 }
 
 .last-informations p#add-tec,
 .last-informations p.remove-tec {
-    font-size: 12px;
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-    cursor: pointer;
+  font-size: 12px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .last-informations input[type="text"] {
-    width: 30%;
-    height: 30px;
-    border-bottom: 1px solid var(--primary-color);
-    outline: var(--primary-color);
-    padding: 1px 4px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+  width: 30%;
+  height: 30px;
+  border-bottom: 1px solid var(--primary-color);
+  outline: var(--primary-color);
+  padding: 1px 4px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
 }
 
 .last-informations .contribution p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .last-informations .contribution label {
-    margin-left: 5px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .last-informations input[type="radio"] {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .last-informations .license p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .last-informations select {
-    background-color: white;
-    outline: none;
-    border: 1px solid var(--primary-color);
-    font-family: 'Roboto', sans-serif;
+  background-color: white;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .last-informations button {
-    background-color: var(--primary-color);
-    border-radius: 7px;
-    margin-top: 15px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    height: 40px;
-    outline: none;
-    transition: all 0.2s;
-    text-transform: uppercase;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+  outline: none;
+  transition: all 0.2s;
+  text-transform: uppercase;
 }
 
 .last-informations button:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 .hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .show {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* README OUT */
 
 .readme-out {
-    position: absolute;
+  position: absolute;
 
-    margin: 10px auto;
-    left: 0;
-    right: 0;
+  margin: 10px auto;
+  left: 0;
+  right: 0;
 
-    width: 800px;
-    min-height: 250px;
+  width: 800px;
+  min-height: 250px;
 
-    padding: 24px;
+  padding: 24px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background-color: white;
+  background-color: white;
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .readme-out h1 {
-    color: var(--secondary-color);
-    font-style: italic;
-    font-size: 36px;
-    margin-bottom: 20px;
+  color: var(--secondary-color);
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .readme-out h3 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .readme-out textarea {
-    border: 3px solid var(--primary-color);
-    padding: 12px;
-    resize: none;
-    border-radius: 5px;
-    background-color: white;
-    width: 95%;
-    font-family: 'SFMono-Regular','Consolas','Liberation Mono','Menlo','Courier',monospace;
-    font-size: 12px;
-    background: #fff;
-    line-height: 1.5;
+  border: 3px solid var(--primary-color);
+  padding: 12px;
+  resize: none;
+  border-radius: 5px;
+  background-color: white;
+  width: 95%;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    "Courier", monospace;
+  font-size: 12px;
+  background: #fff;
+  line-height: 1.5;
 }
