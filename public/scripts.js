@@ -70,7 +70,7 @@ const buttonNext = document.querySelector('#button-next')
 const buttonNext2 = document.querySelector('#button-next2')
 const buttonNext3 = document.querySelector('#button-next3')
 
-if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
+if (buttonStart && buttonNext && buttonNext2 && buttonNext3) {
     buttonStart.addEventListener("click", function() {
         initialBox.classList.add('hidden')
         setTimeout(function() {
@@ -105,7 +105,7 @@ if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
 }
 
 // backward button
-if(backButtons) {
+if (backButtons) {
     backButtons.forEach(button => {
         button.addEventListener("click", () => {
             const isBeingShowed = button
@@ -206,3 +206,4 @@ inputsFile.forEach(input => {
     const buttonFile = input.nextElementSibling
     buttonFile.onclick = () => input.click()
 })
+}
