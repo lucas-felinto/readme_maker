@@ -70,7 +70,7 @@ const buttonNext = document.querySelector('#button-next')
 const buttonNext2 = document.querySelector('#button-next2')
 const buttonNext3 = document.querySelector('#button-next3')
 
-if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
+if (buttonStart && buttonNext && buttonNext2 && buttonNext3) {
     buttonStart.addEventListener("click", function() {
         initialBox.classList.add('hidden')
         setTimeout(function() {
@@ -91,6 +91,7 @@ if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
         imagesGif.classList.remove('show')
         setTimeout(() => {
             about.classList.add('show')
+            about.querySelectorAll("textarea").forEach(textarea => textarea.style.display = "initial")
         }, 200)
     })
 
@@ -104,7 +105,7 @@ if(buttonStart && buttonNext && buttonNext2 && buttonNext3) {
 }
 
 // backward button
-if(backButtons) {
+if (backButtons) {
     backButtons.forEach(button => {
         button.addEventListener("click", () => {
             const isBeingShowed = button
@@ -118,4 +119,91 @@ if(backButtons) {
             }, 200)
         })
     })
+}
+
+// upload images
+
+const PhotosUpload = {
+    uploadLimit: 5,
+    input: "",
+    logoFiles: [],
+    projectFiles: [],
+    apply(func, params) {
+        if (func.includes('Logo')) PhotosUpload.uploadLimit = 1
+        if (func.includes('Project')) PhotosUpload.uploadLimit = 5
+
+        PhotosUpload[func](params)
+    },
+    handleFileInputLogo(event) {
+        const { files: fileList } = event.target
+        PhotosUpload.input = event.target
+
+        if (PhotosUpload.hasLimit(event)) {
+            PhotosUpload.updateInputFiles()
+            return
+        }
+
+        Array.from(fileList).forEach(file => {
+            PhotosUpload.logoFiles.push(file)
+        })
+
+        PhotosUpload.updateInputFiles()
+    },
+    hasLimit(event) {
+        const { input, uploadLimit, logoFiles, projectFiles } = PhotosUpload
+        const { files: fileList } = input
+        
+        if (fileList.length > uploadLimit) {
+            (uploadLimit > 1) ? alert(`Envie no máximo ${uploadLimit} fotos!`) : alert(`Envie no máximo 1 foto!`)
+            event.preventDefault()
+            return true
+        }
+
+        const totalPhotos = (uploadLimit === 1) ? fileList.length + logoFiles.length : fileList.length + projectFiles.length
+        if (totalPhotos > uploadLimit) {
+            (uploadLimit > 1) ? alert(`Envie no máximo ${uploadLimit} fotos!`) : alert(`Envie no máximo 1 foto!`)
+            event.preventDefault()
+            return true
+        }
+
+        return false
+    },
+    getAllFiles() {
+        const { uploadLimit, logoFiles, projectFiles } = PhotosUpload
+        const datatransfer = new DataTransfer() || new ClipboardEvent("").clipboardData
+
+        if (uploadLimit === 1) {
+            logoFiles.forEach(file => datatransfer.items.add(file))  
+        } else {
+            projectFiles.forEach(file => datatransfer.items.add(file))
+        }
+
+        return datatransfer.files
+    },
+    updateInputFiles() {
+        PhotosUpload.input.files = PhotosUpload.getAllFiles()
+    },
+    handleFileInputProject(event) {
+        const { files: fileList } = event.target
+        PhotosUpload.input = event.target
+
+        if (PhotosUpload.hasLimit(event)) {
+            PhotosUpload.updateInputFiles()
+            return
+        }
+
+        Array.from(fileList).forEach(file => {
+            PhotosUpload.projectFiles.push(file)
+        })
+
+        PhotosUpload.updateInputFiles()
+    }
+}
+
+const inputsFile = document.querySelectorAll(".input-file > input")
+
+inputsFile.forEach(input => {
+    const buttonFile = input.nextElementSibling
+    buttonFile.onclick = () => input.click()
+})
 }
