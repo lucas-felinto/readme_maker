@@ -212,7 +212,7 @@ button {
   width: 90%;
   margin: 0px auto;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 3px 8px;
 
@@ -292,11 +292,15 @@ button {
   margin-bottom: 15px;
 }
 
+.images-gif .input-url:first-child {
+  margin-bottom: 15px;
+}
+
 .images-gif input {
   width: 90%;
   margin-bottom: 10px;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 3px 8px;
 
@@ -317,6 +321,7 @@ button {
 
 .images-gif p.remove-image {
   text-align: right;
+  padding: 0;
 }
 
 .images-gif button {
@@ -451,6 +456,34 @@ button {
   color: var(--primary-color);
 }
 
+.last-informations #features {
+  margin-top: 8px;
+}
+
+.last-informations .features-input:not(:first-child) {
+  position: relative;
+  display: flex;
+  padding-bottom: 37px;
+  align-items: center;
+}
+
+.last-informations .features-input:first-child {
+  padding-bottom: 20px;
+}
+
+.last-informations .features-input:not(:first-child) input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.last-informations .features-input p.remove-tec {
+  position: absolute;
+  right: -52px;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
 .last-informations p#add-tec,
 .last-informations p.remove-tec {
   font-size: 12px;
@@ -465,7 +498,7 @@ button {
 .last-informations input[type="text"] {
   width: 30%;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 1px 4px;
   text-align: center;
