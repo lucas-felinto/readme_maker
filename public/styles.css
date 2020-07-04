@@ -212,7 +212,7 @@ button {
   width: 90%;
   margin: 0px auto;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 3px 8px;
 
@@ -292,11 +292,15 @@ button {
   margin-bottom: 15px;
 }
 
+.images-gif .input-url:first-child {
+  margin-bottom: 15px;
+}
+
 .images-gif input {
   width: 90%;
   margin-bottom: 10px;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 3px 8px;
 
@@ -494,7 +498,7 @@ button {
 .last-informations input[type="text"] {
   width: 30%;
   height: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   outline: var(--primary-color);
   padding: 1px 4px;
   text-align: center;
