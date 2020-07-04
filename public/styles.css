@@ -317,6 +317,7 @@ button {
 
 .images-gif p.remove-image {
   text-align: right;
+  padding: 0;
 }
 
 .images-gif button {
@@ -449,6 +450,34 @@ button {
 .last-informations p {
   font-size: 20px;
   color: var(--primary-color);
+}
+
+.last-informations #features {
+  margin-top: 8px;
+}
+
+.last-informations .features-input:not(:first-child) {
+  position: relative;
+  display: flex;
+  padding-bottom: 37px;
+  align-items: center;
+}
+
+.last-informations .features-input:first-child {
+  padding-bottom: 20px;
+}
+
+.last-informations .features-input:not(:first-child) input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.last-informations .features-input p.remove-tec {
+  position: absolute;
+  right: -52px;
+  transform: translateX(-50%);
+  margin: 0;
 }
 
 .last-informations p#add-tec,
