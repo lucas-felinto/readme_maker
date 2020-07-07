@@ -14,18 +14,16 @@
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
-  
+  <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen">
+  <img src="https://img.shields.io/badge/website-up-brightgreen">
+  <br />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucas-felinto/readme_maker">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucas-felinto/readme_maker">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
+  <br />
   <a href="https://www.linkedin.com/in/lucas-felinto/">
     <img alt="My Linkedin" src="https://img.shields.io/badge/lucasfelinto-%230077B5?style=social&logo=linkedin">
   </a>
-
-  <br />
-
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucas-felinto/readme_maker">
-
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucas-felinto/readme_maker">
-
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
 </p>
 
 ---
@@ -33,6 +31,7 @@
 <h4 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#seedling-requisitos-minimos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#beginner-iniciando">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#colaboradores">Colaborades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -41,11 +40,11 @@
 
 ## :information_source: Sobre
 
-O ReadME Maker é uma aplicação feita para auxiliar desenvolvedores a construirem o README.md dos seus projetos. Com o intuito de facilitar a criação do texto, são feitas algumas perguntas sobre o projeto, apresentando ao final da aplicação todo o markdown pronto para ser implementado no GitHub.
+O ReadME Maker é uma aplicação feita para auxiliar desenvolvedores a construirem o README.md dos seus projetos. Com o intuito de facilitar a criação do texto, são feitas algumas perguntas sobre o projeto, apresentando ao final da aplicação todo o markdown pronto para ser implementado no arquivo README.md do seu projeto no GitHub.
 
 ## :rocket: Tecnologias Utilizadas
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
@@ -53,12 +52,16 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 
+## :seedling: Requisitos Mínimos
+
+- NodeJS 10.x
+
 ## :link: Como contribuir
 
-O projeto é aberto para contribuições, todos são bem vindos para colaborar!
+Todos são bem vindos para colaborar com o projeto! Para isso:
 
 - Faça um Fork do repositório,
-- Faça um clone do respositório criado a partir do fork
+- Faça um clone do respositório criado a partir do seu fork
 - Crie uma branch
 - Faça um commit
 - Faça um push
@@ -67,7 +70,8 @@ O projeto é aberto para contribuições, todos são bem vindos para colaborar!
 ## :beginner: Iniciando 
 
 <b>Clonando o repositório:</b>
-- ```$ git clone https://github.com/lucas-felinto/myBooks.git```
+
+- ```$ git clone https://github.com/lucas-felinto/readme_maker.git```
 
 <b>Download das dependências:</b>
 <p>Direcione-se para a raíz do projeto</p>
@@ -75,6 +79,7 @@ O projeto é aberto para contribuições, todos são bem vindos para colaborar!
 - ```npm install```
 
 <b>Executando:</b>
+
 - `npm start`
 
 ## Colaboradores
