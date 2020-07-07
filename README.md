@@ -31,7 +31,7 @@
 <h4 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#seedling-requisitos-minimos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#beginner-iniciando">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#colaboradores">Colaborades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -66,6 +66,18 @@ Todos são bem vindos para colaborar com o projeto! Para isso:
 - Faça um commit
 - Faça um push
 - Crie a PR
+
+<b>Mantendo o seu fork atualizado:</b>
+- Clone o seu fork
+```git clone https://github.com/seuusuario/readme_maker.git ``` 
+- Adicione um remote para o repositório original
+```git remote add nomedabranch ```
+- Atualize o remote
+```git fetch nomedabranch ```
+- Faça o rebase do master com o master do remote
+``` git rebase nomedabranch/master ```
+
+Seu fork está atualizado!
 
 ## :beginner: Iniciando 
 
