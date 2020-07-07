@@ -60,8 +60,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Todos são bem vindos para colaborar com o projeto! Para isso:
 
-- Faça um Fork do repositório,
-- Faça um clone do respositório criado a partir do seu fork
+- Faça um Fork do repositório
+- Faça um clone do respositório criado a partir do seu fork 
 - Crie uma branch
 - Faça um commit
 - Faça um push
@@ -78,9 +78,15 @@ Todos são bem vindos para colaborar com o projeto! Para isso:
 
 - ```npm install```
 
-<b>Executando:</b>
+<b>Executando</b>
 
-- `npm start`
+No modo desenvolvimento:
+
+- `npm run dev`
+
+No modo produção:
+
+- `npm run start`
 
 ## Colaboradores
 
