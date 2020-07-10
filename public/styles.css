@@ -30,6 +30,10 @@ body {
   min-height: fit-content;
 }
 
+main.hide {
+  display: none;
+}
+
 .initial-box {
   position: absolute;
   margin: 160px auto;

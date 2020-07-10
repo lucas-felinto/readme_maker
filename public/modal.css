@@ -1,0 +1,94 @@
+#modal {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0e0a14de;
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#modal.hide {
+    display: none;
+    visibility: hidden;
+}
+
+#modal .content {
+    color: #fefefe;
+    width: 90%;
+    height: 90%;
+}
+
+#modal .header {
+    display: flex;
+    max-width: 500px;
+    width: inherit;
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 32px;
+}
+
+#modal .header button {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    outline: none;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+#modal .header button:hover {
+    filter: brightness(90%);
+}
+
+#modal .header h1 {
+    color: #fefefe;
+    line-height: 42px;
+    font-size: 36px;
+}
+
+#modal .images-box {
+    margin-top: 48px;
+}
+
+#modal #images-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+}
+
+#modal .image {
+    position: relative;
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#modal #images-preview .image img:first-of-type {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#modal .image img:last-child {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
