@@ -14,7 +14,6 @@
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
-  <br />
   <a href="https://www.linkedin.com/in/lucas-felinto/">
     <img alt="My Linkedin" src="https://img.shields.io/badge/lucasfelinto-%230077B5?style=social&logo=linkedin">
   </a>
