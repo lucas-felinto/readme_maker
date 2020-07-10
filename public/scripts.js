@@ -4,6 +4,7 @@ const imagesGif = document.querySelector(".images-gif");
 const about = document.querySelector(".about");
 const lastInformations = document.querySelector(".last-informations");
 const backButtons = document.querySelectorAll(".label > img");
+const copyReadmeButton = document.querySelector(".copy-readme");
 
 function removeField(event) {
   const divUrl = event.target.parentNode;
@@ -325,4 +326,14 @@ function removeImageHover(event) {
 
   image.style.background = "none";
   image.style.opacity = "1";
+}
+
+// Copy ReadMe Text
+
+if (copyReadmeButton) {
+  copyReadmeButton.addEventListener("click", () => {
+    const readmeCopy = document.querySelector("#readme-ready");
+    readmeCopy.select();
+    document.execCommand("Copy");
+  });
 }
