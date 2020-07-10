@@ -652,3 +652,20 @@ button {
   position: relative;
   top: 1px;
 }
+
+.requirements {
+  margin-bottom: 10px;
+}
+
+textarea#requirements {
+  background-color: white;
+  outline: none;
+  resize: vertical;
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
