@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/github/issues/lucas-felinto/readme_maker">
   <img src="https://img.shields.io/github/issues-closed-raw/lucas-felinto/readme_maker">
   <img src="https://img.shields.io/github/issues-pr-closed-raw/lucas-felinto/readme_maker">
+  </br>
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucas-felinto/readme_maker">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucas-felinto/readme_maker">
   <a href="LICENSE">
