@@ -2,8 +2,6 @@
   <img alt="logo" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/27/3281058027_05984fd9-6968-4e21-9f5c-00c74f0639e1.png?cb=1594158879" width="300" heigth="200" />
 </h2>
 
----
-
 <p align="center">
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
