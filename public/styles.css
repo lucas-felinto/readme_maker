@@ -30,6 +30,10 @@ body {
   min-height: fit-content;
 }
 
+main.hide {
+  display: none;
+}
+
 .initial-box {
   position: absolute;
   margin: 160px auto;
@@ -99,7 +103,8 @@ button.initial {
 
 .input-file {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .input-file > button {
@@ -164,6 +169,16 @@ p.file span.tooltip-box strong {
 #file-button2 {
   margin-top: 0;
   width: 50%;
+  height: 35px;
+}
+
+#file-viewer1 {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+#file-viewer2 {
+  margin: 0;
   height: 35px;
 }
 
