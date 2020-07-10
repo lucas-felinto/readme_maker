@@ -3,15 +3,17 @@
 </h2>
 
 <p align="center">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
+  <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen">
+  <img src="https://img.shields.io/badge/website-up-brightgreen">
+  <img src="https://img.shields.io/github/issues/lucas-felinto/readme_maker">
+  <img src="https://img.shields.io/github/issues-closed-raw/lucas-felinto/readme_maker">
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/lucas-felinto/readme_maker">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucas-felinto/readme_maker">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucas-felinto/readme_maker">
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
-  <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen">
-  <img src="https://img.shields.io/badge/website-up-brightgreen">
-  <br />
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lucas-felinto/readme_maker">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucas-felinto/readme_maker">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
   <br />
   <a href="https://www.linkedin.com/in/lucas-felinto/">
     <img alt="My Linkedin" src="https://img.shields.io/badge/lucasfelinto-%230077B5?style=social&logo=linkedin">
