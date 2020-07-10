@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'https://readme-maker.herokuapp.com/',
-}
+  url: "https://readme-maker.herokuapp.com/",
+};

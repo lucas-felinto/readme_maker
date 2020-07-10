@@ -1,19 +1,20 @@
-const express = require('express')
-const nunjucks = require('nunjucks')
-const routes = require('./routes')
+const express = require("express");
+const nunjucks = require("nunjucks");
+const routes = require("./routes");
 
-const server = express()
+const server = express();
 
-server.use(express.urlencoded({ extended: true }))
-server.use(express.static('public'))
-server.use(routes)
+server.use(express.urlencoded({ extended: true }));
+server.use(express.static("public"));
+server.use(routes);
 
-server.set("view engine", "njk")
+server.set("view engine", "njk");
 
 nunjucks.configure("app/views", {
-    express: server,
-    noCache: true,
-    autoescape: true
-})
+  express: server,
+  noCache: true,
+  autoescape: true,
+});
 
-server.listen(process.env.PORT || 5000)
+// eslint-disable-next-line no-undef
+server.listen(process.env.PORT || 5000);
