@@ -1,9 +1,6 @@
 <h2 align="center">
   <img alt="logo" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/27/3281058027_05984fd9-6968-4e21-9f5c-00c74f0639e1.png?cb=1594158879" width="300" heigth="200" />
 </h2>
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/62717182/86397462-3cc81900-bc7a-11ea-80ad-e505f8927def.gif" width="1000" heigth="350">
-</p>
 
 ---
 
