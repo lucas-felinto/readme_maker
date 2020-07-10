@@ -24,7 +24,7 @@ const addImage = document.querySelector("#add-image");
 const addTec = document.querySelector("#add-tec");
 
 if (addImage && addTec) {
-  addImage.addEventListener("click", (event) => {
+  addImage.addEventListener("click", () => {
     const divInput = document.querySelector("#url-img");
     const inputUrl = document.querySelectorAll(".input-url");
 
@@ -47,7 +47,7 @@ if (addImage && addTec) {
     divInput.appendChild(newField);
   });
 
-  addTec.addEventListener("click", (event) => {
+  addTec.addEventListener("click", () => {
     const divInput = document.querySelector("#features");
     const inputFeature = document.querySelectorAll(".features-input");
 
@@ -133,7 +133,7 @@ const PhotosUpload = {
   uploadLimit: 5,
   inputLogo: "",
   inputProject: "",
-  preview: document.querySelector('#images-preview'),
+  preview: document.querySelector("#images-preview"),
   logoFiles: [],
   projectFiles: [],
   apply(func, params) {
@@ -153,19 +153,19 @@ const PhotosUpload = {
 
     Array.from(fileList).forEach((file) => {
       PhotosUpload.logoFiles.push(file);
-      
+
       const reader = new FileReader();
       reader.onload = () => {
         const image = new Image();
         image.src = String(reader.result);
-        
-        const div = PhotosUpload.getContainer(image)
-        div.classList.add("logo-preview")
 
-        PhotosUpload.preview.appendChild(div)
-      }
+        const div = PhotosUpload.getContainer(image);
+        div.classList.add("logo-preview");
 
-      reader.readAsDataURL(file)
+        PhotosUpload.preview.appendChild(div);
+      };
+
+      reader.readAsDataURL(file);
     });
 
     PhotosUpload.updateInputFiles(PhotosUpload.inputLogo);
@@ -177,7 +177,7 @@ const PhotosUpload = {
     if (fileList.length > uploadLimit) {
       uploadLimit > 1
         ? alert(`Envie no máximo ${uploadLimit} fotos!`)
-        : alert(`Envie no máximo 1 foto!`);
+        : alert("Envie no máximo 1 foto!");
       event.preventDefault();
       return true;
     }
@@ -189,7 +189,7 @@ const PhotosUpload = {
     if (totalPhotos > uploadLimit) {
       uploadLimit > 1
         ? alert(`Envie no máximo ${uploadLimit} fotos!`)
-        : alert(`Envie no máximo 1 foto!`);
+        : alert("Envie no máximo 1 foto!");
       event.preventDefault();
       return true;
     }
@@ -198,7 +198,7 @@ const PhotosUpload = {
   },
   getAllFiles(input) {
     const { logoFiles, projectFiles } = PhotosUpload;
-    const logoInputName = "logo_file"
+    const logoInputName = "logo_file";
     const datatransfer =
       new DataTransfer() || new ClipboardEvent("").clipboardData;
 
@@ -230,97 +230,99 @@ const PhotosUpload = {
         const image = new Image();
         image.src = String(reader.result);
 
-        const div = PhotosUpload.getContainer(image)
+        const div = PhotosUpload.getContainer(image);
 
-        PhotosUpload.preview.appendChild(div)
-      }
+        PhotosUpload.preview.appendChild(div);
+      };
 
-      reader.readAsDataURL(file)
+      reader.readAsDataURL(file);
     });
 
     PhotosUpload.updateInputFiles(PhotosUpload.inputProject);
   },
   getContainer(image) {
-    const div = document.createElement('div')
-    div.classList.add('image')
-    div.appendChild(image)
-    div.appendChild(PhotosUpload.getRemoveButton())
+    const div = document.createElement("div");
+    div.classList.add("image");
+    div.appendChild(image);
+    div.appendChild(PhotosUpload.getRemoveButton());
 
-    return div
+    return div;
   },
   getRemoveButton() {
-      const button = document.createElement('img')
-      button.src = "/close-24px.svg"
-      setHover(button)
-      button.onclick = PhotosUpload.removePhoto
+    const button = document.createElement("img");
+    button.src = "/close-24px.svg";
+    setHover(button);
+    button.onclick = PhotosUpload.removePhoto;
 
-      return button
+    return button;
   },
   removePhoto(event) {
-    const photoDiv = event.target.parentNode
-    const newFiles = Array.from(PhotosUpload.preview.children)
-      .filter(file => file.classList.contains('image') && !file.classList.contains('logo-preview'))
+    const photoDiv = event.target.parentNode;
+    const newFiles = Array.from(PhotosUpload.preview.children).filter(
+      (file) =>
+        file.classList.contains("image") &&
+        !file.classList.contains("logo-preview")
+    );
 
-    const index = newFiles.indexOf(photoDiv)
+    const index = newFiles.indexOf(photoDiv);
     if (index < 0) {
-      PhotosUpload.logoFiles.splice(0, 1)
-      PhotosUpload.updateInputFiles(PhotosUpload.inputLogo)
+      PhotosUpload.logoFiles.splice(0, 1);
+      PhotosUpload.updateInputFiles(PhotosUpload.inputLogo);
     } else {
-      PhotosUpload.projectFiles.splice(index, 1)
-      PhotosUpload.updateInputFiles(PhotosUpload.inputProject)
+      PhotosUpload.projectFiles.splice(index, 1);
+      PhotosUpload.updateInputFiles(PhotosUpload.inputProject);
     }
 
-    photoDiv.remove()
-  }
+    photoDiv.remove();
+  },
 };
 
 // gallery and image input
 const inputsFile = document.querySelectorAll(".input-file > input");
-const fileViewerButtons = document.querySelectorAll("#file-viewer1, #file-viewer2");
-const modal = document.querySelector("#modal")
-const buttonHideModal = document.querySelector("#modal div.header > button")
-const main = document.querySelector("main")
+const fileViewerButtons = document.querySelectorAll(
+  "#file-viewer1, #file-viewer2"
+);
+const modal = document.querySelector("#modal");
+const buttonHideModal = document.querySelector("#modal div.header > button");
+const main = document.querySelector("main");
 
-if(inputsFile &&
-  fileViewerButtons &&
-  modal &&
-  buttonHideModal &&
-  main) {
-    function showHideModal({ target }) {
-      modal.classList.toggle("hide")
-      main.classList.toggle("hide", target.id)
-    }
-    
-    fileViewerButtons.forEach(button => {
-      button.addEventListener("click", showHideModal)
-    })
-    buttonHideModal.addEventListener("click", showHideModal)
-  
-    inputsFile.forEach((input) => {
-      const buttonFile = input.nextElementSibling;
-      buttonFile.onclick = () => input.click();
-    });
+if (inputsFile && fileViewerButtons && modal && buttonHideModal && main) {
+  // eslint-disable-next-line no-inner-declarations
+  function showHideModal({ target }) {
+    modal.classList.toggle("hide");
+    main.classList.toggle("hide", target.id);
+  }
+
+  fileViewerButtons.forEach((button) => {
+    button.addEventListener("click", showHideModal);
+  });
+  buttonHideModal.addEventListener("click", showHideModal);
+
+  inputsFile.forEach((input) => {
+    const buttonFile = input.nextElementSibling;
+    buttonFile.onclick = () => input.click();
+  });
 }
 
 // button remove image on hover
 function setHover(element) {
-  element.addEventListener("mouseover", setImageHover)
-  element.addEventListener("touchstart", setImageHover)
+  element.addEventListener("mouseover", setImageHover);
+  element.addEventListener("touchstart", setImageHover);
 }
 
 function setImageHover(event) {
-  const image = event.target.previousElementSibling
-  
-  image.addEventListener("mouseout", removeImageHover)
-  image.addEventListener("touchend", removeImageHover)
+  const image = event.target.previousElementSibling;
 
-  image.style.background = "#ffffffe8"
-  image.style.opacity = "0.4"
+  image.addEventListener("mouseout", removeImageHover);
+  image.addEventListener("touchend", removeImageHover);
+
+  image.style.background = "#ffffffe8";
+  image.style.opacity = "0.4";
 }
 
 function removeImageHover(event) {
-  const image = event.target
+  const image = event.target;
 
-  image.style.background = "none"
-  image.style.opacity = "1"
+  image.style.background = "none";
+  image.style.opacity = "1";
 }
