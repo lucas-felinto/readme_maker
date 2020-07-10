@@ -131,7 +131,9 @@ if (backButtons) {
 
 const PhotosUpload = {
   uploadLimit: 5,
-  input: "",
+  inputLogo: "",
+  inputProject: "",
+  preview: document.querySelector('#images-preview'),
   logoFiles: [],
   projectFiles: [],
   apply(func, params) {
@@ -142,21 +144,34 @@ const PhotosUpload = {
   },
   handleFileInputLogo(event) {
     const { files: fileList } = event.target;
-    PhotosUpload.input = event.target;
+    PhotosUpload.inputLogo = event.target;
 
-    if (PhotosUpload.hasLimit(event)) {
-      PhotosUpload.updateInputFiles();
+    if (PhotosUpload.hasLimit(event, PhotosUpload.inputLogo)) {
+      PhotosUpload.updateInputFiles(PhotosUpload.inputLogo);
       return;
     }
 
     Array.from(fileList).forEach((file) => {
       PhotosUpload.logoFiles.push(file);
+      
+      const reader = new FileReader();
+      reader.onload = () => {
+        const image = new Image();
+        image.src = String(reader.result);
+        
+        const div = PhotosUpload.getContainer(image)
+        div.classList.add("logo-preview")
+
+        PhotosUpload.preview.appendChild(div)
+      }
+
+      reader.readAsDataURL(file)
     });
 
-    PhotosUpload.updateInputFiles();
+    PhotosUpload.updateInputFiles(PhotosUpload.inputLogo);
   },
-  hasLimit(event) {
-    const { input, uploadLimit, logoFiles, projectFiles } = PhotosUpload;
+  hasLimit(event, input) {
+    const { uploadLimit, logoFiles, projectFiles } = PhotosUpload;
     const { files: fileList } = input;
 
     if (fileList.length > uploadLimit) {
@@ -181,12 +196,13 @@ const PhotosUpload = {
 
     return false;
   },
-  getAllFiles() {
-    const { uploadLimit, logoFiles, projectFiles } = PhotosUpload;
+  getAllFiles(input) {
+    const { logoFiles, projectFiles } = PhotosUpload;
+    const logoInputName = "logo_file"
     const datatransfer =
       new DataTransfer() || new ClipboardEvent("").clipboardData;
 
-    if (uploadLimit === 1) {
+    if (input.name === logoInputName) {
       logoFiles.forEach((file) => datatransfer.items.add(file));
     } else {
       projectFiles.forEach((file) => datatransfer.items.add(file));
@@ -194,29 +210,117 @@ const PhotosUpload = {
 
     return datatransfer.files;
   },
-  updateInputFiles() {
-    PhotosUpload.input.files = PhotosUpload.getAllFiles();
+  updateInputFiles(input) {
+    input.files = PhotosUpload.getAllFiles(input);
   },
   handleFileInputProject(event) {
     const { files: fileList } = event.target;
-    PhotosUpload.input = event.target;
+    PhotosUpload.inputProject = event.target;
 
-    if (PhotosUpload.hasLimit(event)) {
-      PhotosUpload.updateInputFiles();
+    if (PhotosUpload.hasLimit(event, PhotosUpload.inputProject)) {
+      PhotosUpload.updateInputFiles(PhotosUpload.inputProject);
       return;
     }
 
     Array.from(fileList).forEach((file) => {
       PhotosUpload.projectFiles.push(file);
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        const image = new Image();
+        image.src = String(reader.result);
+
+        const div = PhotosUpload.getContainer(image)
+
+        PhotosUpload.preview.appendChild(div)
+      }
+
+      reader.readAsDataURL(file)
     });
 
-    PhotosUpload.updateInputFiles();
+    PhotosUpload.updateInputFiles(PhotosUpload.inputProject);
   },
+  getContainer(image) {
+    const div = document.createElement('div')
+    div.classList.add('image')
+    div.appendChild(image)
+    div.appendChild(PhotosUpload.getRemoveButton())
+
+    return div
+  },
+  getRemoveButton() {
+      const button = document.createElement('img')
+      button.src = "/close-24px.svg"
+      setHover(button)
+      button.onclick = PhotosUpload.removePhoto
+
+      return button
+  },
+  removePhoto(event) {
+    const photoDiv = event.target.parentNode
+    const newFiles = Array.from(PhotosUpload.preview.children)
+      .filter(file => file.classList.contains('image') && !file.classList.contains('logo-preview'))
+
+    const index = newFiles.indexOf(photoDiv)
+    if (index < 0) {
+      PhotosUpload.logoFiles.splice(0, 1)
+      PhotosUpload.updateInputFiles(PhotosUpload.inputLogo)
+    } else {
+      PhotosUpload.projectFiles.splice(index, 1)
+      PhotosUpload.updateInputFiles(PhotosUpload.inputProject)
+    }
+
+    photoDiv.remove()
+  }
 };
 
+// gallery and image input
 const inputsFile = document.querySelectorAll(".input-file > input");
+const fileViewerButtons = document.querySelectorAll("#file-viewer1, #file-viewer2");
+const modal = document.querySelector("#modal")
+const buttonHideModal = document.querySelector("#modal div.header > button")
+const main = document.querySelector("main")
 
-inputsFile.forEach((input) => {
-  const buttonFile = input.nextElementSibling;
-  buttonFile.onclick = () => input.click();
-});
+if(inputsFile &&
+  fileViewerButtons &&
+  modal &&
+  buttonHideModal &&
+  main) {
+    function showHideModal({ target }) {
+      modal.classList.toggle("hide")
+      main.classList.toggle("hide", target.id)
+    }
+    
+    fileViewerButtons.forEach(button => {
+      button.addEventListener("click", showHideModal)
+    })
+    buttonHideModal.addEventListener("click", showHideModal)
+  
+    inputsFile.forEach((input) => {
+      const buttonFile = input.nextElementSibling;
+      buttonFile.onclick = () => input.click();
+    });
+}
+
+// button remove image on hover
+function setHover(element) {
+  element.addEventListener("mouseover", setImageHover)
+  element.addEventListener("touchstart", setImageHover)
+}
+
+function setImageHover(event) {
+  const image = event.target.previousElementSibling
+  
+  image.addEventListener("mouseout", removeImageHover)
+  image.addEventListener("touchend", removeImageHover)
+
+  image.style.background = "#ffffffe8"
+  image.style.opacity = "0.4"
+}
+
+function removeImageHover(event) {
+  const image = event.target
+
+  image.style.background = "none"
+  image.style.opacity = "1"
+}
