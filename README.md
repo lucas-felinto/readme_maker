@@ -15,10 +15,15 @@
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
+  </br>
   <a href="https://www.linkedin.com/in/lucas-felinto/">
     <img alt="My Linkedin" src="https://img.shields.io/badge/lucasfelinto-%230077B5?style=social&logo=linkedin">
   </a>
 </p>
+
+---
+
+##### [Click here to read the documentation in portuguese 🇧🇷](https://github.com/lucas-felinto/readme_maker/blob/master/README-pt.md)
 
 ---
 
@@ -34,11 +39,11 @@
 
 ## :information_source: About
 
-O ReadME Maker é uma aplicação feita para auxiliar desenvolvedores a construirem o README.md dos seus projetos. Com o intuito de facilitar a criação do texto, são feitas algumas perguntas sobre o projeto, apresentando ao final da aplicação todo o markdown pronto para ser implementado no arquivo README.md do seu projeto no GitHub.
+ReadME Maker is an application designed to help developers build the README.md of their projects. In order to facilitate the creation of the text, some questions are asked about the project, presenting at the end of the application all the markdown ready to be implemented in the README.md file of your project on GitHub.
 
 ## :rocket: Technologies
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
+The project was developed using the following technologies:
 
 - [Node.js](https://nodejs.org/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
@@ -50,50 +55,51 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## :seedling: Minimal Requirements
 
 - NodeJS 10.x
+- NPM or Yarn
 
 ## :link: How To Contribute
 
-Todos são bem vindos para colaborar com o projeto! Para isso:
+Everyone is welcome to collaborate with the project! For this:
 
-- Faça um Fork do repositório
-- Faça um clone do respositório criado a partir do seu fork
-- Crie uma branch
-- Faça um commit
-- Faça um push
-- Crie a PR
+- Fork the repository
+- Clone your forked repository
+- Create a branch
+- Commit your changes
+- Push
+- Create the PR
 
-<b>Mantendo o seu fork atualizado:</b>
+<b>Keeping your fork up to date:</b>
 
-- Clone o seu fork
+- Clone your fork
   `git clone https://github.com/seuusuario/readme_maker.git`
-- Adicione um remote para o repositório original
+- Add a remote to your original repository
   `git remote add nomedabranch`
-- Atualize o remote
+- Update the remote
   `git fetch nomedabranch`
-- Faça o rebase do master com o master do remote
+- Do the rebase from master with your remote master
   `git rebase nomedabranch/master`
 
-Seu fork está atualizado!
+Your fork is update!
 
 ## :beginner: Getting Started
 
-<b>Clonando o repositório:</b>
+<b>Cloning the repository:</b>
 
 - `$ git clone https://github.com/lucas-felinto/readme_maker.git`
 
-<b>Download das dependências:</b>
+<b>Download the dependences:</b>
 
-<p>Direcione-se para a raíz do projeto</p>
+<p>Go to the root of the project</p>
 
 - `npm install`
 
-<b>Executando</b>
+<b>Executing</b>
 
-No modo desenvolvimento:
+In the development mode:
 
 - `npm run dev`
 
-No modo produção:
+In the production mode:
 
 - `npm run start`
 
@@ -105,4 +111,4 @@ No modo produção:
 
 ## Licence
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is under the MIT license. See the archive [LICENSE](LICENSE) for more details.
