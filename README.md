@@ -33,8 +33,8 @@
   <a href="#seedling-minimal-requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#link-how-to-contribute">How to Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#beginner-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#collaborators">Collaborators</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#licence">Licence</a>
+  <a href="#octocat-collaborators">Collaborators</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil2-licence">Licence</a>
 </h4>
 
 ## :information_source: About
@@ -103,12 +103,12 @@ In the production mode:
 
 - `npm run start`
 
-## Collaborators
+## :octocat: Collaborators
 
 | [<img src="https://avatars1.githubusercontent.com/u/57813174?s=460&u=b945fd8ddf70b205101773a7ab47b1a07576af7c&v=4" width=115><br><sub>Wemerson Jesus</sub>](https://github.com/wejesuss) | [<img src="https://avatars0.githubusercontent.com/u/36867823?s=460&u=247143eb1bccd7a98f86439d4b25da2917062153&v=4" width=115><br><sub>Maicon Boer</sub>](https://github.com/maiconboer) | [<img src="https://avatars0.githubusercontent.com/u/54115624?s=460&u=36c750bc965fde8a88dedbd0aef8c985c3fde0ab&v=4" width=115><br><sub>José Eduardo</sub>](https://github.com/jerp86) | [<img src="https://avatars2.githubusercontent.com/u/56521973?s=460&u=fdcfb7f2c627adc5acb808a00cb9994210d5d3ba&v=4" width=115><br><sub>Felipe Schiavon</sub>](https://github.com/FehSchiavon) | [<img src="https://avatars0.githubusercontent.com/u/34798570?s=460&u=dad702ca711453000d7029f460a59f732db3bc21&v=4" width=115><br><sub>Vinicius Kammradt</sub>](https://github.com/kammradt) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 
-## Licence
+## :pencil2: Licence
 
 This project is under the MIT license. See the archive [LICENSE](LICENSE) for more details.
