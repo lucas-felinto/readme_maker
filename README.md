@@ -23,20 +23,20 @@
 ---
 
 <h4 align="center">
-  <a href="#information_source-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#beginner-iniciando">Iniciando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#colaboradores">Colaboradores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#licença">Licença</a>
+  <a href="#information_source-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#seedling-minimal-requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#link-how-to-contribute">How to Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#beginner-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#collaborators">Collaborators</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licence">Licence</a>
 </h4>
 
-## :information_source: Sobre
+## :information_source: About
 
 O ReadME Maker é uma aplicação feita para auxiliar desenvolvedores a construirem o README.md dos seus projetos. Com o intuito de facilitar a criação do texto, são feitas algumas perguntas sobre o projeto, apresentando ao final da aplicação todo o markdown pronto para ser implementado no arquivo README.md do seu projeto no GitHub.
 
-## :rocket: Tecnologias Utilizadas
+## :rocket: Technologies
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
@@ -47,11 +47,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [CSS](https://www.w3schools.com/css/)
 - [ESLint](https://eslint.org/)
 
-## :seedling: Requisitos Mínimos
+## :seedling: Minimal Requirements
 
 - NodeJS 10.x
 
-## :link: Como contribuir
+## :link: How To Contribute
 
 Todos são bem vindos para colaborar com o projeto! Para isso:
 
@@ -75,7 +75,7 @@ Todos são bem vindos para colaborar com o projeto! Para isso:
 
 Seu fork está atualizado!
 
-## :beginner: Iniciando
+## :beginner: Getting Started
 
 <b>Clonando o repositório:</b>
 
@@ -97,12 +97,12 @@ No modo produção:
 
 - `npm run start`
 
-## Colaboradores
+## Collaborators
 
 | [<img src="https://avatars1.githubusercontent.com/u/57813174?s=460&u=b945fd8ddf70b205101773a7ab47b1a07576af7c&v=4" width=115><br><sub>Wemerson Jesus</sub>](https://github.com/wejesuss) | [<img src="https://avatars0.githubusercontent.com/u/36867823?s=460&u=247143eb1bccd7a98f86439d4b25da2917062153&v=4" width=115><br><sub>Maicon Boer</sub>](https://github.com/maiconboer) | [<img src="https://avatars0.githubusercontent.com/u/54115624?s=460&u=36c750bc965fde8a88dedbd0aef8c985c3fde0ab&v=4" width=115><br><sub>José Eduardo</sub>](https://github.com/jerp86) | [<img src="https://avatars2.githubusercontent.com/u/56521973?s=460&u=fdcfb7f2c627adc5acb808a00cb9994210d5d3ba&v=4" width=115><br><sub>Felipe Schiavon</sub>](https://github.com/FehSchiavon) | [<img src="https://avatars0.githubusercontent.com/u/34798570?s=460&u=dad702ca711453000d7029f460a59f732db3bc21&v=4" width=115><br><sub>Vinicius Kammradt</sub>](https://github.com/kammradt) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 
-## Licença
+## Licence
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
