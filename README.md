@@ -23,7 +23,7 @@
 
 ---
 
-##### [Click here to read the documentation in portuguese 🇧🇷](https://github.com/lucas-felinto/readme_maker/blob/master/README-pt.md)
+##### [Clique aqui para ler a documentação em português 🇧🇷](https://github.com/lucas-felinto/readme_maker/blob/master/README-pt.md)
 
 ---
 
