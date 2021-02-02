@@ -2,6 +2,14 @@
   <img alt="logo" src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/27/3281058027_05984fd9-6968-4e21-9f5c-00c74f0639e1.png?cb=1594158879" width="300" heigth="200" />
 </h2>
 
+---
+
+<h4 align="center">
+  https://readme-maker.herokuapp.com/
+</h4>
+
+---
+
 <p align="center">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
   <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen">
@@ -51,6 +59,8 @@ The project was developed using the following technologies:
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [ESLint](https://eslint.org/)
+
+## :seedling: Minimal Requirements
 
 - [Node v10+](https://nodejs.org/en/docs/)
 - [NPM](https://www.npmjs.com/) or [Yarn](https://classic.yarnpkg.com/en/docs/).
