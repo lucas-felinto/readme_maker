@@ -52,10 +52,8 @@ The project was developed using the following technologies:
 - [CSS](https://www.w3schools.com/css/)
 - [ESLint](https://eslint.org/)
 
-## :seedling: Minimal Requirements
-
-- NodeJS 10.x
-- NPM or Yarn
+- [Node v10+](https://nodejs.org/en/docs/)
+- [NPM](https://www.npmjs.com/) or [Yarn](https://classic.yarnpkg.com/en/docs/).
 
 ## :link: How To Contribute
 
@@ -109,7 +107,6 @@ In the production mode:
 
 👤 **Lucas Felinto**
 
-* Website: https://www.linkedin.com/in/lucas-felinto/
 * Github: [@lucas-felinto](https://github.com/lucas-felinto)
 * LinkedIn: [@lucas-felinto](https://linkedin.com/in/lucas-felinto)
 
