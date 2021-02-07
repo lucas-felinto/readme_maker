@@ -4,10 +4,6 @@
 
 ---
 
-#### [Click here to generate your README](https://readme-maker.herokuapp.com/)
-
----
-
 <p align="center">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucas-felinto/readme_maker">
   <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen">
@@ -29,6 +25,7 @@
 
 ---
 
+##### [Click here to generate your README](https://readme-maker.herokuapp.com/)
 ##### [Clique aqui para ler a documentação em português 🇧🇷](https://github.com/lucas-felinto/readme_maker/blob/master/README-pt.md)
 
 ---
