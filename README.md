@@ -4,9 +4,7 @@
 
 ---
 
-<h4 align="center">
-  https://readme-maker.herokuapp.com/
-</h4>
+#### [Click here to generate your README](https://readme-maker.herokuapp.com/)
 
 ---
 
