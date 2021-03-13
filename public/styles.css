@@ -19,8 +19,8 @@
 /* HOME */
 
 html {
-  background: url("https://gist.githubusercontent.com/brettlangdon/85942af486eb79118467/raw/2a7409cd3c26a90b2e82bdc40dc7db18b92b3517/6orB6Yb.jpg")
-    no-repeat center center fixed;
+  background: url("https://user-images.githubusercontent.com/62717182/111034887-67b46080-83f6-11eb-9ebe-22136536fd5f.jpg")
+    repeat center center fixed;
 }
 
 body {
@@ -36,7 +36,7 @@ main.hide {
 
 .initial-box {
   position: absolute;
-  margin: 160px auto;
+  margin: 135px auto;
   left: 0;
   right: 0;
 
@@ -71,17 +71,17 @@ button.initial {
 }
 
 .initial-box h1 {
-  font-size: 36px;
+  font-size: 46px;
   align-self: center;
 
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-style: italic;
 }
 
 .initial-box p {
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 30px;
+  margin-bottom: 18px;
 }
 
 .initial-box button {
