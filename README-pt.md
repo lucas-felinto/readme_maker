@@ -23,6 +23,11 @@
 
 ---
 
+##### [Clique aqui para gerar o seu README](https://readme-maker.herokuapp.com/)
+##### [Clique aqui para ler a documentação em português 🇧🇷](https://github.com/lucas-felinto/readme_maker/blob/master/README-pt.md)
+
+---
+
 <h4 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -99,9 +104,13 @@ No modo produção:
 
 - `npm run start`
 
+Abrir no navegador:
+
+- `http://localhost:5000`
+
 ## :octocat: Colaboradores
 
-| [<img src="https://avatars1.githubusercontent.com/u/57813174?s=460&u=b945fd8ddf70b205101773a7ab47b1a07576af7c&v=4" width=115><br><sub>Wemerson Jesus</sub>](https://github.com/wejesuss) | [<img src="https://avatars0.githubusercontent.com/u/36867823?s=460&u=247143eb1bccd7a98f86439d4b25da2917062153&v=4" width=115><br><sub>Maicon Boer</sub>](https://github.com/maiconboer) | [<img src="https://avatars0.githubusercontent.com/u/54115624?s=460&u=36c750bc965fde8a88dedbd0aef8c985c3fde0ab&v=4" width=115><br><sub>José Eduardo</sub>](https://github.com/jerp86) | [<img src="https://avatars2.githubusercontent.com/u/56521973?s=460&u=fdcfb7f2c627adc5acb808a00cb9994210d5d3ba&v=4" width=115><br><sub>Felipe Schiavon</sub>](https://github.com/FehSchiavon) | [<img src="https://avatars0.githubusercontent.com/u/34798570?s=460&u=dad702ca711453000d7029f460a59f732db3bc21&v=4" width=115><br><sub>Vinicius Kammradt</sub>](https://github.com/kammradt) |
+| [<img src="https://avatars1.githubusercontent.com/u/57813174?s=460&u=b945fd8ddf70b205101773a7ab47b1a07576af7c&v=4" width=115><br><sub>Wemerson Jesus</sub>](https://github.com/wejesuss) | [<img src="https://avatars0.githubusercontent.com/u/36867823?s=460&u=247143eb1bccd7a98f86439d4b25da2917062153&v=4" width=115><br><sub>Maicon Boer</sub>](https://github.com/maiconboer) | [<img src="https://avatars0.githubusercontent.com/u/54115624?s=460&u=36c750bc965fde8a88dedbd0aef8c985c3fde0ab&v=4" width=115><br><sub>José Eduardo</sub>](https://github.com/jerp86) | [<img src="https://avatars2.githubusercontent.com/u/56521973?s=460&u=fdcfb7f2c627adc5acb808a00cb9994210d5d3ba&v=4" width=115><br><sub>Felipe Schiavon</sub>](https://github.com/FehSchiavon) | [<img src="https://avatars0.githubusercontent.com/u/34798570?s=460&u=dad702ca711453000d7029f460a59f732db3bc21&v=4" width=115><br><sub>Vinicius Kammradt</sub>](https://github.com/kammradt) |[<img src="https://avatars.githubusercontent.com/u/18629707?v=4" width=115><br><sub>Robson Mendonça</sub>](https://github.com/robsonamendonca)
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 
