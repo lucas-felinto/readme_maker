@@ -16,5 +16,7 @@ nunjucks.configure("app/views", {
   autoescape: true,
 });
 
+const port = process.env.PORT || 5000
 // eslint-disable-next-line no-undef
-server.listen(process.env.PORT || 5000);
+server.listen(port);
+console.log('Node server running on port ' + port);
