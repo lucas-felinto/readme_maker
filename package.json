@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A nodeJS plataform developed to help your project's readme github",
   "main": "server.js",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
     "start": "node app/server.js",
     "dev": "nodemon app/server.js"
